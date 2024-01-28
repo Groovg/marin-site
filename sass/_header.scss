@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: absolute;
+  width: 100%;
+  gap: 10px;
+
+
+  @media screen and (max-width: 1200px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+
+.logo {
+  &__img {
+    transition: 0.3s;
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    @media screen and (max-width: 600px) {
+      height: 60px;
+
+    }
+  }
+}

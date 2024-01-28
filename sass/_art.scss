@@ -1,0 +1,94 @@
+.art {
+    padding-top: 60px;
+    padding-bottom: 28px;
+    background-image: url(../img/tini-img/article.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        @media screen and (max-width: 1000px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+        }
+
+    }
+
+    &__title {
+        color: #FFF;
+        margin-bottom: 54px;
+
+        @media screen and (max-width: 1000px) {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 500px) {
+            font-size: 30px;
+        }
+    }
+
+    &__item {
+        max-width: 334px;
+        transition: 0.4s;
+
+        &:hover {
+            scale: 104%;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__img {
+        margin-bottom: 24px;
+
+        @media screen and (max-width: 1100px) {
+            max-width: 300px;
+        }
+
+        @media screen and (max-width: 500px) {
+            max-width: 280px;
+        }
+    }
+
+    &__text {
+        color: #FFF;
+        font-family: Oswald;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.3;
+        transition: 0.4s;
+
+        &:hover {
+            color: rgb(237, 129, 51);
+        }
+
+
+
+
+        @media screen and (max-width: 500px) {
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
